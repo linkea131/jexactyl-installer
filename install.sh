@@ -1,7 +1,5 @@
 #!/bin/bash
 
-set -e
-
 #############################################################################
 #                                                                           #
 # Project 'jexactyl-installer' for panel, edit of 'pterodactyl-installer'   #
@@ -28,7 +26,7 @@ set -e
 #                                                                           #
 #############################################################################
 
-SCRIPT_VERSION="v1.11.3"
+SCRIPT_VERSION="v1.0.0"
 GITHUB_BASE_URL="https://raw.githubusercontent.com/Vasolix/jexactyl-installer"
 
 LOG_PATH="/var/log/jexactyl-installer.log"
