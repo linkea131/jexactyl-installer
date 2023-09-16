@@ -1,4 +1,4 @@
-# :bird: linkea131ctyl-installer
+# :bird: Pterodactyl-installer
 
 [![License: GPL v3](https://img.shields.io/github/license/vilhelmprytz/pterodactyl-installer)](LICENSE)
 [![Discord of pterodactyl-installer](https://img.shields.io/discord/682342331206074373?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://pterodactyl-installer.se/discord)
@@ -14,7 +14,7 @@
 
 ## 帮助和支持
 
-如需有关脚本本身以及**非官方 Pterodactyl 项目**的帮助和支持，您可以创建一个问题 [Github issues](https://github.com/Vasolix/jexactyl-installer/issues).
+如需有关脚本本身以及**非官方 Pterodactyl 项目**的帮助和支持，您可以创建一个问题 [Github issues](https://github.com/linkea131/jexactyl-installer/issues).
 
 ## panel 支持的操作系统
 
@@ -26,16 +26,16 @@ panel 和 Wings 支持的安装设置列表（此安装脚本支持的安装）.
 | ---------------- | ------- | ------------------ | ----------- |
 | Ubuntu           | 14.04   | :red_circle:       |             |
 |                  | 16.04   | :red_circle: \*    |             |
-|                  | 18.04   | :white_check_mark: | 8.0         |
-|                  | 20.04   | :white_check_mark: | 8.0         |
-|                  | 22.04   | :white_check_mark: | 8.0         |
+|                  | 18.04   | :white_check_mark: | 8.1         |
+|                  | 20.04   | :white_check_mark: | 8.1         |
+|                  | 22.04   | :white_check_mark: | 8.1         |
 | Debian           | 8       | :red_circle: \*    |             |
-|                  | 9       | :white_check_mark: | 8.0         |
-|                  | 10      | :white_check_mark: | 8.0         |
-|                  | 11      | :white_check_mark: | 8.0         |
+|                  | 9       | :white_check_mark: | 8.1         |
+|                  | 10      | :white_check_mark: | 8.1         |
+|                  | 11      | :white_check_mark: | 8.1         |
 | CentOS           | 6       | :red_circle:       |             |
-|                  | 7       | :white_check_mark: | 8.0         |
-|                  | 8       | :white_check_mark: | 8.0         |
+|                  | 7       | :white_check_mark: | 8.1         |
+|                  | 8       | :white_check_mark: | 8.1         |
 
 ### Wings 支持的操作系统
 
@@ -108,12 +108,12 @@ vagrant up <name>
 
 发布版本后推送另一个提交, 该提交将撤销您所做的更改 `install-wings.sh` 和 `install-panel.sh`. 查看 [此次提交](https://github.com/vilhelmprytz/pterodactyl-installer/commit/be5f361523d1d546d49eef8b3ce1a9145eded234) 以供参考.
 
-## Contributors ✨
+## 贡献者 ✨
 
-Copyright (C) 2018 - 2022, Vilhelm Prytz, <vilhelm@prytznet.se>
+Copyright (C) 2018 - 2023, Vilhelm Prytz, <xwei58148v5871314@gmail.com>
 
-Created and maintained by [Vilhelm Prytz](https://github.com/vilhelmprytz).
+创建和维护者 [Vilhelm Prytz](https://github.com/vilhelmprytz).
 
-Thanks to the Discord moderators [sam1370](https://github.com/sam1370), [Linux123123](https://github.com/Linux123123) and [sinjs](https://github.com/sinjs) for helping on the Discord server!
+感谢 Discord 版主 [sam1370](https://github.com/sam1370), [Linux123123](https://github.com/Linux123123) 和 [sinjs](https://github.com/sinjs) 在 Discord 服务器上提供帮助!
 
-And special thanks to [Linux123123](https://github.com/Linux123123) for frequently contributing to the project with bug reports, feature requests, pull requests, and more!
+并特别感谢 [Linux123123](https://github.com/Linux123123) 经常通过错误报告、功能请求、拉取请求等为项目做出贡献!
