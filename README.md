@@ -16,13 +16,13 @@
 
 如需有关脚本本身以及**非官方 Pterodactyl 项目**的帮助和支持，您可以创建一个问题 [Github issues](https://github.com/Vasolix/jexactyl-installer/issues).
 
-## 支持的操作系统
+## panel 支持的操作系统
 
 panel 和 Wings 支持的安装设置列表（此安装脚本支持的安装）.
 
-### 支持的操作系统和网络服务器
+### 
 
-| 操作系统 | 版本 | nginx 支持      | PHP 支持 |
+| 操作系统 | 版本 | nginx 支持 | PHP 支持 |
 | ---------------- | ------- | ------------------ | ----------- |
 | Ubuntu           | 14.04   | :red_circle:       |             |
 |                  | 16.04   | :red_circle: \*    |             |
@@ -37,9 +37,9 @@ panel 和 Wings 支持的安装设置列表（此安装脚本支持的安装）.
 |                  | 7       | :white_check_mark: | 8.0         |
 |                  | 8       | :white_check_mark: | 8.0         |
 
-### Supported Wings operating systems
+### Wings 支持的操作系统
 
-| Operating System | Version | Supported          |
+| 操作系统 | 版本 |  支持 |
 | ---------------- | ------- | ------------------ |
 | Ubuntu           | 14.04   | :red_circle:       |
 |                  | 16.04   | :red_circle: \*    |
@@ -54,42 +54,42 @@ panel 和 Wings 支持的安装设置列表（此安装脚本支持的安装）.
 |                  | 7       | :white_check_mark: |
 |                  | 8       | :white_check_mark: |
 
-_\* Ubuntu 16 and Debian 8 no longer supported since Pterodactyl does not actively support it._
+_\* Ubuntu 16 和 Debian 8 不再支持 因为 Pterodactyl 不支持._
 
-## Using the installation scripts
+## 使用安装脚本
 
-To use the installation scripts, simply run this command as root. The script will ask you whether you would like to install just the panel, just Wings or both.
+要使用安装脚本, 只需以 root 身份运行此命令即可, 该脚本将询问您是否要仅安装面板、仅安装 Wings 还是两者都安装.
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/Vasolix/jexactyl-installer/v0.13.0/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/linkea131/jexactyl-installer/v1.11.3.3/install.sh)
 ```
 
-_Note: On some systems, it's required to be already logged in as root before executing the one-line command (where `sudo` is in front of the command does not work)._
+_注意: 在某些系统上, 在执行一行命令之前需要先以 root 身份登录（其中命令前面的“sudo”不起作用）._
 
 
-## Firewall setup
+## 防火墙设置
 
-The installation scripts can install and configure a firewall for you. The script will ask whether you want this or not. It is highly recommended to opt-in for the automatic firewall setup.
+安装脚本可以为您安装和配置防火墙. 该脚本将询问您是否需要此操作. 强烈建议选择自动防火墙设置.
 
-## Development & Ops
+## 发布 & 操作
 
-### Testing the script locally
+### 在本地测试脚本
 
-To test the script, we use [Vagrant](https://www.vagrantup.com). With Vagrant, you can quickly get a fresh machine up and running to test the script.
+为了测试脚本，我们使用 [Vagrant](https://www.vagrantup.com). 使用 Vagrant，您可以快速启动并运行一台新机器来测试脚本.
 
-If you want to test the script on all supported installations in one go, just run the following.
+如果您想一次性在所有受支持的安装上测试该脚本，只需运行以下命令.
 
 ```bash
 vagrant up
 ```
 
-If you only want to test a specific distribution, you can run the following.
+如果您只想测试特定发行版, 可以运行以下命令.
 
 ```bash
 vagrant up <name>
 ```
 
-Replace name with one of the following (supported installations).
+将名称替换为以下内容之一 (支持的操作系统).
 
 - `ubuntu_jammy`
 - `ubuntu_focal`
@@ -100,13 +100,13 @@ Replace name with one of the following (supported installations).
 - `centos_8`
 - `centos_7`
 
-Then you can use `vagrant ssh <name of machine>` to SSH into the box. The project directory will be mounted in `/vagrant` so you can quickly modify the script locally and then test the changes by running the script from `/vagrant/install_panel.sh` and `/vagrant/install_wings.sh` respectively.
+然后你可以使用 `vagrant ssh <机器名称>` 使用 SSH 连接到服务器. 项目目录将被挂载在 `/vagrant` 因此您可以在本地快速修改脚本，然后通过运行脚本来测试更改 `/vagrant/install_panel.sh` 和 `/vagrant/install_wings.sh` 分别.
 
-### Creating a release
+### 创建正式版本
 
-There are a couple of files that each release commit should always change. Firstly, update the `CHANGELOG.md` so that the release date and release tag are both displayed. No changes should be made to the changelog points themselves. Secondly, update `GITHUB_SOURCE` and `SCRIPT_RELEASE` in both `install-panel.sh` and `install-wings.sh`. Thirdly, update `SCRIPT_RELEASE` in `install.sh`. Finally, you can now push a commit with the message `Release vX.Y.Z`. Create a release on GitHub. See [this commit](https://github.com/vilhelmprytz/pterodactyl-installer/commit/90aaae10785f1032fdf90b216a4a8d8ca64e6d44) for reference.
+每次发布提交都应该更改几个文件，首先更新 `CHANGELOG.md` 以便同时显示发布日期和发布标签. 不应对变更日志点本身进行任何更改, 其次更新 `GITHUB_SOURCE` 和 `SCRIPT_RELEASE` 同时 `install-panel.sh` 和 `install-wings.sh`. 第三步, 更新 `SCRIPT_RELEASE` in `install.sh`. 最后，您现在可以使用消息推送提交`Release vX.Y.Z`. 在 GitHub 上创建一个版本 [this commit](https://github.com/vilhelmprytz/pterodactyl-installer/commit/90aaae10785f1032fdf90b216a4a8d8ca64e6d44) 以供参考.
 
-When the release is published, push another commit which revers the changes you made to `install-wings.sh` and `install-panel.sh`. See [this commit](https://github.com/vilhelmprytz/pterodactyl-installer/commit/be5f361523d1d546d49eef8b3ce1a9145eded234) for reference.
+发布版本后推送另一个提交, 该提交将撤销您所做的更改 `install-wings.sh` 和 `install-panel.sh`. 查看 [this commit](https://github.com/vilhelmprytz/pterodactyl-installer/commit/be5f361523d1d546d49eef8b3ce1a9145eded234) 以供参考.
 
 ## Contributors ✨
 
