@@ -104,9 +104,9 @@ vagrant up <name>
 
 ### 创建正式版本
 
-每次发布提交都应该更改几个文件，首先更新 `CHANGELOG.md` 以便同时显示发布日期和发布标签. 不应对变更日志点本身进行任何更改, 其次更新 `GITHUB_SOURCE` 和 `SCRIPT_RELEASE` 同时 `install-panel.sh` 和 `install-wings.sh`. 第三步, 更新 `SCRIPT_RELEASE` in `install.sh`. 最后，您现在可以使用消息推送提交`Release vX.Y.Z`. 在 GitHub 上创建一个版本 [this commit](https://github.com/vilhelmprytz/pterodactyl-installer/commit/90aaae10785f1032fdf90b216a4a8d8ca64e6d44) 以供参考.
+每次发布提交都应该更改几个文件，首先更新 `CHANGELOG.md` 以便同时显示发布日期和发布标签. 不应对变更日志点本身进行任何更改, 其次更新 `GITHUB_SOURCE` 和 `SCRIPT_RELEASE` 同时 `install-panel.sh` 和 `install-wings.sh`. 第三步, 更新 `SCRIPT_RELEASE` in `install.sh`. 最后，您现在可以使用消息推送提交`Release vX.Y.Z`. 在 GitHub 上创建一个版本 [此次提交](https://github.com/vilhelmprytz/pterodactyl-installer/commit/90aaae10785f1032fdf90b216a4a8d8ca64e6d44) 以供参考.
 
-发布版本后推送另一个提交, 该提交将撤销您所做的更改 `install-wings.sh` 和 `install-panel.sh`. 查看 [this commit](https://github.com/vilhelmprytz/pterodactyl-installer/commit/be5f361523d1d546d49eef8b3ce1a9145eded234) 以供参考.
+发布版本后推送另一个提交, 该提交将撤销您所做的更改 `install-wings.sh` 和 `install-panel.sh`. 查看 [此次提交](https://github.com/vilhelmprytz/pterodactyl-installer/commit/be5f361523d1d546d49eef8b3ce1a9145eded234) 以供参考.
 
 ## Contributors ✨
 
