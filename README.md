@@ -16,13 +16,13 @@
 
 如需有关脚本本身以及**非官方 Pterodactyl 项目**的帮助和支持，您可以创建一个问题 [Github issues](https://github.com/Vasolix/jexactyl-installer/issues).
 
-## Supported installations
+## 支持的操作系统
 
-List of supported installation setups for panel and Wings (installations supported by this installation script).
+panel 和 Wings 支持的安装设置列表（此安装脚本支持的安装）.
 
-### Supported panel operating systems and webservers
+### 支持的操作系统和网络服务器
 
-| Operating System | Version | nginx support      | PHP Version |
+| 操作系统 | 版本 | nginx 支持      | PHP 支持 |
 | ---------------- | ------- | ------------------ | ----------- |
 | Ubuntu           | 14.04   | :red_circle:       |             |
 |                  | 16.04   | :red_circle: \*    |             |
