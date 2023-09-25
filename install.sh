@@ -22,12 +22,12 @@
 # https://github.com/Vasolix/jexactyl-installer/blob/master/LICENSE         #
 #                                                                           #
 # This script is not associated with the official Pterodactyl Project.      #
-# https://github.com/Vasolix/jexactyl-installer                             #
+# https://github.com/linkea131/jexactyl-installer                             #
 #                                                                           #
 #############################################################################
 
 SCRIPT_VERSION="v1.11.3.3"
-GITHUB_BASE_URL="https://raw.githubusercontent.com/Vasolix/jexactyl-installer"
+GITHUB_BASE_URL="https://raw.githubusercontent.com/linkea131/jexactyl-installer"
 
 LOG_PATH="/var/log/jexactyl-installer.log"
 
@@ -69,7 +69,7 @@ done=false
 output "Jexactyl installation script @ $SCRIPT_VERSION"
 output
 output "Jexactyl Installer fork of Pterodactyl Installer"
-output "https://github.com/Vasolix/Jexactyl-installer"
+output "https://github.com/linkea131/Jexactyl-installer"
 output "https://github.com/vilhelmprytz/pterodactyl-installer"
 output
 output "Sponsoring/Donations: https://github.com/vilhelmprytz/pterodactyl-installer?sponsor=1"
